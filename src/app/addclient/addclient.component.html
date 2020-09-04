@@ -1,0 +1,140 @@
+<div class="container-fluid">
+
+
+
+
+    <div class="row">
+        <div class="col-sm-3  ">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-sm-9" [formGroup]="fbFormGroup">
+            <div class="row bg-primary mt-5 mr-3" style="height: 65px;">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 h3 d-flex p-3 pl-4 align-content-center text-light">
+                            <p style="margin-right:15px">ADD CLIENT</p>
+
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path fill-rule="evenodd"
+                                    d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 h4">
+                            Name :
+                        </div>
+                    </div>
+                    <div class="row mt-2 p-0">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-block p-3" name="" id="" placeholder="First Name" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="fname">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-block p-0" name="" id="" placeholder="Last Name" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="lname">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12 h4">
+                            Cell Phone:
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 h3 ml-2 ">
+                            <svg width="1em " height="1em " viewBox="0 0 16 16 " class="bi bi-phone-fill " fill="currentColor " xmlns="http://www.w3.org/2000/svg ">
+                                <path fill-rule="evenodd "
+                                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z " />
+                            </svg>
+                        </div>
+                        <div class="col-sm-10 ">
+                            <input type="text " class="form-control form-control-block p-0 " name=" " id=" " placeholder="Enter Cell Phone Number " style="outline: none;border:none; border-bottom:1px solid #000;" formControlName="mobile">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="row">
+                        <div class="col-12 h4">
+                            Email :
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 h3 ml-2 ">
+                            <i class="fa fa-envelope-o " style="font-size:30px "></i>
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="text " class="form-control form-control-block p-0 " name=" " id=" " placeholder="Enter Email Id " style="outline: none;border:none; border-bottom:1px solid #000;" formControlName="email">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12 h4">
+                            Organization :
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <input type="text " class="form-control form-control-block p-0 " name=" " id=" " placeholder="Enter Organization Name" style="outline: none;border:none; border-bottom:1px solid #000;" formControlName="organization">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="row">
+                        <div class="col-12 h4">
+                            Service Department :
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <input type="text " class="form-control form-control-block p-0 " name=" " id=" " placeholder="Enter Service Department" style="outline: none;border:none; border-bottom:1px solid #000;" formControlName="sdept">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="row mt-4">
+                        <div class="col-sm-6 h4">
+                            Organization Address :
+                        </div>
+                    </div>
+                    <div class="row mt-2 p-0">
+                        <div class="col-sm-1">
+                            <i class="fa fa-map-marker" style="font-size:36px"></i>
+                        </div>
+                        <div class="col-sm-10" style="margin-left: -55px;">
+                            <input type=" text " class="form-control form-control-block p-0 " name=" " id=" " placeholder="Enter Address " style="outline: none;border:none; border-bottom:1px solid #000;" formControlName="address">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block" [disabled]="!fbFormGroup.valid" style="color: cornsilk; text-decoration-line: none;" (click)="addnewclient ()">Add
+                        Client</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

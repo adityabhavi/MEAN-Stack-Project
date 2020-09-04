@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-md stick-top  navbar-dark justify-content-end" style="color: black; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(1,190,241,1) 93%, rgba(0,212,255,1) 100%);; box-shadow: 0 0 10px 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                <h3 style="color: cornsilk; text-shadow: 1px 1px 2px black; ">Client Management System</h3>
+
+                <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto mr-1 flex-grow-0" id="navbarTogglerDemo01" [ngClass]="{ 'show': navbarOpen }">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-3" routerLink="/home" style="font-size:3vh;color:white; text-shadow: 1px 1px 2px black;">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link mr-3" routerLink="/contactus" style="font-size:3vh;color:white;text-shadow: 1px 1px 2px black;">Contact Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link mr-3" routerLink="/signin" style="font-size:3vh;color:white; text-shadow: 1px 1px 2px black;">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <h2 class="text-center"></h2>
+    <div class="row d-flex justify-content-center" style="margin-top: 100px">
+        <div class="col-12 col-md-8 col-lg-6 pb-5 ">
+
+
+            <!--Form with header-->
+
+
+            <div class="card  rounded-0 shadow-lg">
+                <div class="card-header p-0">
+                    <div class=" text-white text-center py-2" style="background-color:#01bef1 ;">
+                        <h3><i class="fa fa-envelope"></i> Contact Us</h3>
+                        <p class="m-0">Client management system</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+
+                    <!--Body-->
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-user" style="color:#01bef1"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-envelope " style="color:#01bef1;"></i>
+                                </div>
+                            </div>
+                            <input type="email" class="form-control" id="nombre" name="email" placeholder="cms@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-comment " style="color:#01bef1"></i>
+                                </div>
+                            </div>
+                            <textarea class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" value="Send" class="btn  btn-block rounded-0 py-2" style="background-color: #01bef1; color: white;">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Form with header-->
+
+
+        </div>
+    </div>
+</div>

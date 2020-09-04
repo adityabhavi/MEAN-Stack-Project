@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3  ">
+            <app-u-sidebar></app-u-sidebar>
+        </div>
+        <div class="col-sm-9">
+            <div class="row bg-primary shadow-lg mt-4 mr-3 rounded sticky-top" style="height:50px;">
+
+
+                <div class="col-4 h3 d-flex p-2  pl-4 align-content-center text-light">
+                    <p style="margin-right:15px">Scheduled Meetings</p>
+                </div>
+
+                <div class="col-4"></div>
+            </div>
+
+            <div class="row mt-4 bg-info mr-5 align-content-center rounded shadow-lg sticky-top" style="height: 40px;">
+                <div class="col-2 d-flex justify-content-center h5">
+                    Date
+                </div>
+                <div class="col-2 d-flex justify-content-center h5">
+                    Time
+                </div>
+                <div class="col-3 d-flex justify-content-center h5">
+                    Client
+                </div>
+                <div class="col-3 d-flex justify-content-center h5">
+                    Department
+                </div>
+                <div class="col-2 d-flex justify-content-center h5">
+                    Status
+                </div>
+            </div>
+
+            <div *ngFor="let item of clients" class="row align-items-center justify-content-center">
+                <div class="row ml-1 w-100 mt-4 bg-white mr-5 align-content-center rounded shadow-lg sticky-top" style="height: 40px;">
+                    <div class="col-2 d-flex justify-content-center h5">
+                        {{item.date}}
+                    </div>
+                    <div class="col-2 d-flex justify-content-center h5">
+                        {{item.time}}
+                    </div>
+                    <div class="col-3 d-flex justify-content-center h5">
+                        {{item.dept}}
+                    </div>
+                    <div class="col-3 d-flex justify-content-center h5">
+                        {{item.client}}
+                    </div>
+                    <div class="col-2 d-flex justify-content-center h5">
+                        Scheduled
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

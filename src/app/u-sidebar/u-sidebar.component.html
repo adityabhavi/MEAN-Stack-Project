@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+                <div class="row mt-2">
+                    <div class="col-12 text-light d-flex justify-content-center h4">
+                        <img src="/assets/img_avatar1.jpg" style="border-radius: 50%; height: 150px; width: 150px;" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-light d-flex justify-content-center h4">
+                        <a routerLink="/user" style="color: cornsilk; text-decoration-line: none;">User</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-light d-flex justify-content-center h4">
+                        <a routerLink="/uclient" style="color: cornsilk; text-decoration-line: none;">Clients</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-light d-flex justify-content-center h4">
+                        <a routerLink="/usmeet" style="color: cornsilk; text-decoration-line: none;">Scheduled Meetings</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-light d-flex justify-content-center h4">
+                        <a routerLink="/user" style="color: cornsilk; text-decoration-line: none;">Calender</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="openbtn" (click)="openNav()">&#9776;</button>
+
+        </div>
+        <div class="col-9"></div>
+    </div>
+</div>

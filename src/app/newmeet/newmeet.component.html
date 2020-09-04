@@ -1,0 +1,78 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3  ">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-sm-9" [formGroup]="fbFormGroup">
+            <div class="row bg-primary shadow-lg mt-4 mr-3 rounded sticky-top" style="height:50px;">
+
+
+                <div class="col-sm-4 h3 d-flex p-2  pl-4 align-content-center text-light">
+                    <p style="margin-right:15px">Schedule New Meeting</p>
+                </div>
+
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 pt-2">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="row mt-4">
+                        <div class="col-sm-2 d-flex justify-content-end h5">
+                            Date :
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control form-control-block p-3" name="" id="a" placeholder="dd-mm-yyyy" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row mt-4">
+                        <div class="col-sm-2 d-flex justify-content-end h5">
+                            Time :
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control form-control-block p-3" name="" id="b" placeholder="hh:mm" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="row mt-4">
+                        <div class="col-sm-3 d-flex h5">
+                            Department:
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control form-control-block p-3" name="" id="c" placeholder="Client" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="dept">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row mt-4">
+                        <div class="col-sm-2 d-flex h5">
+                            Client :
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control form-control-block p-3" name="" id="d" placeholder="Client" style="outline: none;border:none;
+                              border-bottom:1px solid #000;" formControlName="client">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block" style="color: cornsilk; text-decoration-line: none;" [disabled]="!fbFormGroup.valid" (click)="addnewmeet()">New Meeting</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
